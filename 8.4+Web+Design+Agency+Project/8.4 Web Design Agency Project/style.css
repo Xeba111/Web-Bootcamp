@@ -10,6 +10,10 @@ body {
   flex: 1;
 }
 
+.card {
+  width: 45%;
+}
+
 h1 {
   font-size: 5rem;
 }
@@ -19,3 +23,49 @@ footer {
   color: midnightblue;
 }
 
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.tile-image{
+  float: left;
+  height: 200px;
+  margin-right: 5%;
+}
+
+#creative{
+  color: midnightblue;
+}
+
+@media (max-width: 680px)
+{
+  .card{
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .tile-image{
+    float: none;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h1{
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .logo{
+    height: 20px;
+  }
+
+  .card-text{
+    text-align: justify;
+  }
+
+}
