@@ -7,13 +7,62 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       font-family: 'Sono', sans-serif;
+    }
+
+    .plan-button{
+      background-color: rgb(255, 110, 0);
+      color: white;
+      border-color: transparent;
+      height: 30px;
+      border-radius: 7%;
+    }
+
+    .plan-title{
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .plan-price{
+      font-weight: bold;
+      font-size: 2em;
+    }
+
+    .price-features{
+      list-style-type: none;
+      justify-items: center;
+    }
+
+    ul{
+      list-style-type: none;
+    }
+
+    li{
+      padding: 5px 0px;
+    }
+
+    .pricing-container{
+      display: flex;
+      justify-content: space-around;
+      
+    }
+
+    .pricing-plan{
+      text-align: center;
     }
 
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
-      
+      .pricing-container{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .pricing-plan{
+      margin: 20px 0px;
+    }
+
     }
   </style>
 </head>
